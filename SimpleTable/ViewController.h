@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
+
+
+
+//UITableViewDataSource protocol declares two required methods (tableView:cellForRowAtIndexPath and tableView:numberOfRowsInSection) that you have to implement. Through implementing these methods, you tell Table View how many rows to display and the data in each row.
